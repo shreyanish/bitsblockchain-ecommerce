@@ -1,3 +1,42 @@
 .ItemGalleryView {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+
+    .ItemImageContainer {
+        width: 400px;
+        height: 300px;
+
+        .ItemImage {
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .ItemDetails {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        gap: 4px;
+        
+        .ItemBrand {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .ItemName {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .ItemPrice {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
 }
