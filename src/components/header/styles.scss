@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 0.5px solid lightgrey;
+
+    .Title {
+        font-size: 32px;
+    }
+
+    .ConnectButton {
+        padding: 12px 16px;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
