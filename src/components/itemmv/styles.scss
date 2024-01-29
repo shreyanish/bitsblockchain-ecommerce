@@ -1,0 +1,89 @@
+.ItemModalContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  .ItemModalView {
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+
+    .ImageContainer {
+      height: 450px;
+      width: 300px;
+      background-color: #F6F6F6;
+      border-radius: 12px 0px 0px 12px;
+      margin-right: 24px;
+
+      .ItemImage {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px 0px 0px 12px;
+      }
+    }
+
+    .ItemDetails {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      gap: 32px;
+
+      .CloseButton {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 24px;
+        cursor: pointer;
+
+        .CloseText {
+          font-size: 12px;
+          font-weight: 300;
+          color: grey;
+        }
+      }
+
+      .ItemBasic {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .Brand {
+          font-size: 12px;
+          font-weight: 300;
+        }
+  
+        .Name {
+          font-size: 24px;
+          font-weight: 600;
+        }
+  
+        .Price {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .ItemDesc {
+        font-size: 14px;
+        font-weight: 200;
+        margin-right: 40px;
+      }
+
+      .BuyNowButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 0px;
+        width: 150px;
+        background-color: #000;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
